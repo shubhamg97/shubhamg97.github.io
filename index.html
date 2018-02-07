@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Page Down</title>
+        <style>
+            p {
+              text-align: center;
+              font-size: 60px;
+              color: #FFFFFF;
+              font-family: Ubuntu;
+              margin-top: 50px;
+              margin-bottom: 30px;
+            }
+            body {
+                background-image: url('background.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 20px;
+                color: #FFFFFF;
+                font-family: Ubuntu;
+            }
+            h2 {
+                text-align: center;
+                font-size: 30px;
+                color: #FFFFFF;
+                font-family: Ubuntu;
+            }
+        </style>
+        <p id="demo"></p>
+
+        <h1 align="center">WEBSITE CURRENTLY DOWN --- APOLOGIES FOR THE INCONVENIENCE</h1>
+        <h2 align="center">WE SHOULD BE BACK UP AND RUNNING BY FEBRUARY 19th, 2018</h2>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 18, 2018 23:59:59").getTime();
+
+        // Update the count down every 1 second (1000 millisecond)
+        var x = setInterval(function() {
+            var now = new Date().getTime(); // Today's date and time
+            var timeLeft = countDownDate - now; // Time till countdown timer ends
+            
+            var days = Math.floor(timeLeft / (1000 * 60 * 60 * 24)); // Days left
+            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); // Hours left
+            var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)); // Minutes left
+            var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000); // Seconds left
+            
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+             
+            if (timeLeft < 0) { // If timer runs out
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "SITE WILL BE UP SHORTLY";
+            }
+        }, 1000);
+        </script>
+
+    </body>
+</html>
