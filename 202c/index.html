@@ -3,6 +3,7 @@
 
   <!-- Title -->
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Instruction Set</title>
   </head>
 
@@ -43,13 +44,36 @@
       font-weight: normal;
     }
 
+    .accordion {
+      background-color: #F0EAD6;
+      color: #111;
+      padding: 20px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16pt;
+      transition: 0.5s;
+    }
+
+    .active, .accordion:hover {
+      background-color: #ddd; 
+    }
+
+    .panel {
+      padding: 0 18px;
+      display: none;
+      background-color: #F0EAD6;
+      overflow: hidden;
+    }
+
     body { /* Attribute for body */
       background-color: #F0EAD6; /* Black text on pale screen */
-      /* background-color: black; /* White text on dark screen */
     }
   </style>
 
   <body>
+
     <!-- Title -->
     <a name="top"><h1>Blackjack & Card Counting</h1></a>
     <h5 align="center"><img src="pics/cards1.png" alt="Cards" width="20%" height="20%"></h5>
@@ -65,68 +89,69 @@
 
 
     <!-- Section 1 -->
-    <br/><a name="blackjack1"><h3>Section Heading 1</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <br/><button class="accordion"><a name="blackjack1"><h3>Section Heading 1</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Section 2 -->
-    <br/><br/><br/><br/>
-    <a name="blackjack2"><h3>Section Heading 2</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="blackjack2"><h3>Section Heading 2</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
-
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
+    
 
 
     <!-- Section 3 -->
-    <br/><br/><br/><br/>
-    <a name="blackjack3"><h3>Section Heading 3</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="blackjack3"><h3>Section Heading 3</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Section 4 -->
-    <br/><br/><br/><br/>
-    <a name="blackjack4"><h3>Section Heading 4</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="blackjack4"><h3>Section Heading 4</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Section 5 -->
-    <br/><br/><br/><br/>
-    <a name="blackjack5"><h3>Section Heading 5</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="blackjack5"><h3>Section Heading 5</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
 
 
     <!-- Topic Heading -->
-    <br/><br/><h1><><><><><></h1><br/><br/>
+    <br/><br/><h1><->-<->-<->-<->-<-></h1><br/><br/>
     <a name="counting"><h2>How do you count cards?</h2></a>
 
     <!-- Hyperlink to Sections -->
@@ -134,68 +159,90 @@
 
 
 
+
+
     <!-- Section 1 -->
-    <br/><a name="counting1"><h3>Section Heading 1</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="counting1"><h3>Section Heading 1</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Section 2 -->
-    <br/><br/><br/><br/>
-    <a name="counting2"><h3>Section Heading 2</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="counting2"><h3>Section Heading 2</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Section 3 -->
-    <br/><br/><br/><br/>
-    <a name="counting3"><h3>Section Heading 3</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="counting3"><h3>Section Heading 3</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Section 4 -->
-    <br/><br/><br/><br/>
-    <a name="counting4"><h3>Section Heading 4</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="counting4"><h3>Section Heading 4</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Section 5 -->
-    <br/><br/><br/><br/>
-    <a name="counting5"><h3>Section Heading 5</h3><img src="pics/cards1.png" width="20%" height="20%" align="right"></a>
+    <button class="accordion"><a name="counting5"><h3>Section Heading 5</h3></a></button>
+    <div class="panel">
+      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
 
-    <h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
+      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
 
-    <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
-
-    <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+      <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
+    </div>
 
 
 
     <!-- Copyright Notice -->
     <br><br>
     <h5 align="center">Copyright &copy 2018 SHUBHAM GOYAL</h5>
+
+    <!-- Script -->
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                  panel.style.display = "none";
+              }
+              else {
+                  panel.style.display = "block";
+              }
+          });
+      }
+    </script>
   </body>
 
 </html>
