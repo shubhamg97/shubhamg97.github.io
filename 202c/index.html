@@ -68,6 +68,18 @@
       overflow: hidden;
     }
 
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      font-family: Verdana;
+      font-size: 10pt;
+      text-align: center;
+    }
+
     body { /* Attribute for body */
       background-color: #F0EAD6; /* Black text on pale screen */
     }
@@ -90,12 +102,12 @@
 
 
     <!-- Introduction -->
-    <br><h4 style="margin-left: 1em; margin-right: 30em"><strong>Introduction:</strong> Blackjack has a hazy origin but there is a general consensus that it probably originated in French casinos in the 18th century. The game was originally called Vingt-et-un (French for 21). Blackjack is a simple card game that requires a minimum of 2 players and a max of as many players as the deck may permit (although traditionally, the table is capped around 5-7 players + the dealer). The game itself is not played between the players but rather a dealer and individual players.</h4>
+    <br><h4 style="margin-left: 1em; margin-right: 20em"><strong>Introduction:</strong> Blackjack has a hazy origin but there is a general consensus that it probably originated in French casinos in the 18th century. The game was originally called Vingt-et-un (French for 21). Blackjack is a simple card game that requires a minimum of 2 players and a max of as many players as the deck may permit (although traditionally, the table is capped around 5-7 players + the dealer). The game itself is not played between the players but rather a dealer and individual players.</h4>
 
 
 
     <!-- Equipment -->
-    <br><h4 style="margin-left: 1em; margin-right: 30em"><strong>Equipment:</strong> - 1 Deck of Cards (French Deck)
+    <br><h4 style="margin-left: 1em; margin-right: 20em"><strong>Equipment:</strong> - 1 Deck of Cards (French Deck)
       <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - 1 Friend (More is better - minimum 1)
       <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Optional: Chips/Tokens</h4>
 
@@ -213,9 +225,13 @@
     <div class="panel">
       <img src="pics/cards1.png" width="20%" height="20%" align="right">
       <h4>The round is always played clockwise from the dealer's perspective. The dealer will now ask the player to his left about what they want to do. The player can do any number of things here depending on their initial cards, the list of actions are listed from 2b to 2g.</h4>
+      <!-- 8a -->
       <h4 style="margin-left: 3em"><strong>8a) </strong>Traditionally, if the sum of cards is less than 10, the player should definitely "hit" until &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspthey are closer to 21.</h4>
+      <!-- 8b -->
       <h4 style="margin-left: 3em"><strong>8b) </strong>For a player whose sum is between 14 and 18, it remains up to the player as to what they &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspwant to do.</h4>
+      <!-- 8c -->
       <h4 style="margin-left: 3em"><strong>8c) </strong>For players with a sum total of 18 or higher, it's usually a good idea to "stand"  so as to not &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspgo "bust".</h4>
+      <!-- 8d -->
       <h4 style="margin-left: 3em"><strong>8d) </strong>If one of the player's first two cards is an Ace and the player doesn't have a natural &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspblackjack, they have a soft hand because they won't go bust if they draw another card. &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspFor example if the player has an A and a 4 initially, the sum total is a soft 15. Now &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspadmittedly, this is a pretty bad hand. Luckily, since the player has a soft 15, they player &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspmay choose to "hit", drawing for example an 8. The player now has an A, a 4 and an 8, &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsumming to a hard 13. The 13 is hard because the Ace is now valued at a 1 and it won't &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspchange value, preventing the player from going bust.</h4>
 
       <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
@@ -250,8 +266,11 @@
     <div class="panel">
       <img src="pics/cards1.png" width="20%" height="20%" align="right">
       <h4>Once the dealer is done playing, he compares his cards with that of the players.</h4>
+      <!-- 11a -->
       <h4 style="margin-left: 3em"><strong>11a) </strong>If the player is bust, that players bet is forfeited and they will have lost that round.</h4>
+      <!-- 11b -->
       <h4 style="margin-left: 3em"><strong>11b) </strong>If the player has a natural blackjack, they win the round; assuming that the dealer &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspdoesn't have a natural blackjack.</h4>
+      <!-- 11c -->
       <h4 style="margin-left: 3em"><strong>11c) </strong>If the player has a sum higher than the dealer's, but still under 21, their winnings match &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsptheir initial bet. If the dealer is higher than the player but under 21, the player's bet is &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspforfeited.</h4>
       <h4>The above steps conclude one round. All subsequent rounds are played Step 7 onwards.</h4>
 
@@ -270,14 +289,40 @@
 
 
 
+    <!-- Introduction -->
+    <br><h4 style="margin-left: 1em; margin-right: 20em"><strong>Introduction:</strong> Once a person has played a couple of rounds of Blackjack, they will start to notice that there is some basic strategy regarding when they should hit and when they should stand to increase their odds of beating the dealer. Understanding the theory behind card counting is a simple idea. If successful at card counting, what the player is doing is predicting which cards are left in the deck, mathematically of course, and adjusting their betting amount accordingly. This next section will teach you how to "count cards" to know how and when to bet higher or lower to increase winnings and minimize losses.</h4>
+
+
+
+    <!-- Equipment -->
+    <br><h4 style="margin-left: 1em; margin-right: 20em"><strong>Equipment:</strong> - 1 Deck of Cards (French Deck)
+      <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - 1 Friend (More is better - minimum 1)
+      <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Optional: Chips/Tokens
+      <br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp - Prior Blackjack experience</h4>
+
+
+
+    <!-- Prior Experience -->
+    <br><h4 style="margin-left: 1em; margin-right: 20em"><strong>Prior Blackjack Experience:</strong> The recommended experience amount includes the ability to play Blackjack without needing &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspto refer to instructions and a &lt50% bust rate (&lt50% is suggested because despite being a &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspgame of chance, going bust is the result of poor decision making).</h4>
+
+
+
+    <!-- Setup -->
+    <br><h4 style="margin-left: 1em; margin-right: 20em"><strong>Setup: </strong>Repeat Steps 3-6 from the Blackjack section to prep for game play.</h4>
+
 
 
     <!-- Section 1 -->
     <button class="accordion"><a name="counting1"><h3>Step 1</h3></a></button>
     <div class="panel">
-      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
-
-      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
+      <img src="pics/cards1.png" width="20%" height="20%" align="right">
+      <h4>Below are some rules to count cards:</h4>
+      <!-- 1a -->
+      <h4 style="margin-left: 3em"><strong>1a) </strong>Cards between 2 - 6 are given a +1 value (+1 because every time these cards are dealt, &nbsp&nbsp&nbsp&nbsp&nbsp&nbspthe cards in the main deck contain higher valued cards and this indicates that the player &nbsp&nbsp&nbsp&nbsp&nbsp&nbspcan bet higher).</h4>
+      <!-- 1b -->
+      <h4 style="margin-left: 3em"><strong>1b) </strong>Cards between 7 - 9 are given a 0 value (0 because these cards carry a neutral valuation &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspand don't affect the betting part of the game too heavily).</h4>
+      <!-- 1c -->
+      <h4 style="margin-left: 3em"><strong>1c) </strong>Cards between 10-K and A are given a -1 value (-1 because every time one of these cards &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspare played, it reduces the chance of you getting a natural blackjack, hindering the &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspplayer's betting efforts).</h4>
 
       <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
     </div>
@@ -287,9 +332,8 @@
     <!-- Section 2 -->
     <button class="accordion"><a name="counting2"><h3>Step 2</h3></a></button>
     <div class="panel">
-      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
-
-      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
+      <img src="pics/cards1.png" width="20%" height="20%" align="right">
+      <h4>Start the count from 0. ALWAYS. Every time the deck is shuffled, restart the count from 0. This is done to prevent card counting. At a casino, if the game is already ongoing, the count cannot start from 0 either, because the player has no idea which cards have already been played. Proper card counting can only be done when a card deck is freshly shuffled.</h4>
 
       <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
     </div>
@@ -299,9 +343,8 @@
     <!-- Section 3 -->
     <button class="accordion"><a name="counting3"><h3>Step 3</h3></a></button>
     <div class="panel">
-      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
-
-      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
+      <img src="pics/cards1.png" width="20%" height="20%" align="right">
+      <h4>To count cards, for all the cards you see on the table, simply perform an addition or subtraction based on the strategy in Step 1.</h4>
 
       <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
     </div>
@@ -311,9 +354,14 @@
     <!-- Section 4 -->
     <button class="accordion"><a name="counting4"><h3>Step 4</h3></a></button>
     <div class="panel">
-      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
-
-      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
+      <img src="pics/cards1.png" width="20%" height="20%" align="right">
+      <h4>To actually utilize the ability to count cards, with the count, you need to modify your bet. The range for bet modification actually depends on the size of the deck as well.</h4>
+      <!-- 4a -->
+      <h4 style="margin-left: 3em"><strong>4a) </strong>If the deck the dealer uses is a single deck, the deviation from 0 won't be high. Note: In a &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspsingle deck scenario, the count will change quickly and unfavourably. In addition, the &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcount should rarely go beyond ± 5.</h4>
+      <!-- 4b -->
+      <h4 style="margin-left: 3em"><strong>4b) </strong>If the deck uses upwards of 5 deck of cards, the deviation needs to be ± 10 for the player &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspto even consider changing their bets significantly.</h4>
+      <!-- 4c -->
+      <h4 style="margin-left: 3em"><strong>4c) </strong>For both scenarios above, if the count exceeds a certain amount in the positive direction, &nbsp&nbsp&nbsp&nbsp&nbsp&nbspit would be in the player's interests to increase their betting amount. Conversely, if it goes &nbsp&nbsp&nbsp&nbsp&nbsp&nbspbelow a certain amount, decrease your bets and decrease them to the house minimum to &nbsp&nbsp&nbsp&nbsp&nbsp&nbspminimize losses.</h4>
 
       <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
     </div>
@@ -323,9 +371,8 @@
     <!-- Section 5 -->
     <button class="accordion"><a name="counting5"><h3>Step 5</h3></a></button>
     <div class="panel">
-      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
-
-      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
+      <img src="pics/cards1.png" width="20%" height="20%" align="right">
+      <h4>Don't forget to keep track of the count with every card that you see. The moment the player misses a card, the entire count is screwed up and the card counting needs to begin from square one.</h4>
 
       <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
     </div>
@@ -335,9 +382,8 @@
     <!-- Section 6 -->
     <button class="accordion"><a name="counting6"><h3>Step 6</h3></a></button>
     <div class="panel">
-      <img src="pics/cards1.png" width="20%" height="20%" align="right"><h4><strong>Main text block 1:</strong> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</h4>
-
-      <h4><strong>Main text block 2:</strong> The quick brown fox jumps over the lazy dog</h4>
+      <img src="pics/cards1.png" width="20%" height="20%" align="right">
+      <h4>Practice. Practice. Practice. Card Counting is not a skill that is learnt in one sitting. To that end, it is advised that you practice keeping count by shuffling a deck and then going through the entire deck, counting it. If you counted correctly, your count at the end should be 0. First practice with the deck to get the final count right, then speed yourself up. A good card counter should be able to get through the deck in under a minute.</h4>
 
       <h5><a href="#top"><span title="Scroll to the top">Back to Top</span></a> | <a href="#blackjack"><span title="Scroll to Blackjack">Blackjack</span></a> | <a href="#counting"><span title="Scroll to Card Counting">Card Counting</span></a></h5>
     </div>
@@ -347,6 +393,13 @@
     <!-- Copyright Notice -->
     <br><br>
     <h5 align="center">Copyright &copy 2018 SHUBHAM GOYAL</h5>
+
+
+
+    <!-- Footer - Compatibility Issue -->
+    <div class="footer">
+      <p>Due to compatibility issues, this page doesn't currently work on mobile devices</p>
+    </div>
 
     <!-- Script -->
     <script>
