@@ -70,7 +70,7 @@ a:after {
 /* Header Wrap */
 .header {
   background: #386DBC;
-  background: url(../backgrounds/header-bg-code.gif) no-repeat center top;
+  background: url(../backgrounds/header-bg-4.jpg); // no-repeat center top;
   padding-top:140px;
   text-align:center;
   background-attachment: relative;
